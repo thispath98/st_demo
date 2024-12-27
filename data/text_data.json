@@ -1,0 +1,55 @@
+{
+    "busan_general_knowledge": "\n서구는 사하구, 사상구, 동구, 중구와 붙어있다.\n광안리는 수영구에 있다.\n부산역은 동구에 있다.\n해운대는 해운대구에 있다.\n해운대구는 수영구, 동래구, 기장군과 붙어있다.\n남구는 수영구, 연제구, 사상구, 서구와 붙어있다.\n기장군은 해운대구와 동래구에 접해 있다.\n동래구는 연제구, 금정구, 해운대구와 붙어있다.\n금정구는 동래구, 연제구, 사상구와 접해 있다.\n연제구는 남구, 동래구, 금정구, 해운대구와 붙어있다.\n부산항은 중구와 동구에 걸쳐 있다.\n감천항은 사하구에 있다.\n광안대교는 수영구와 해운대구를 연결한다.\n송도해수욕장은 서구에 있다.\n다대포해수욕장은 사하구에 있다.\n국제시장과 자갈치시장은 중구에 있다.\n동구는 중구, 서구, 사하구, 남구와 접해 있다.\n사상구는 북구, 금정구, 서구와 접해 있다.\n북구는 사상구, 금정구와 접해 있다.\n영도구는 중구와 다리로 연결되어 있다.\n해운대 해수욕장은 해운대구에 있다.\n동백섬은 해운대구에 있다.\n송정해수욕장은 해운대구에 있다.\n부산 영화의 전당은 해운대구 센텀시티에 위치해 있다.\n충렬사는 동래구에 있다.\n오륜대는 연제구에 있다.\n태종대는 영도구에 있다.\n",
+    "schemas": {
+        "local_tourist_spots": {
+            "columns": {
+                "Tourist_Spot_Name_Korean": "관광지 국문 이름",
+                "District": "관광지가 위치하는 지역(구) 이름",
+                "Major_Category": "관광지의 카테고리, Allowed values: ['역사관광지', '건축/조형물', '휴양관광지', '쇼핑', '체험관광지', '자연관광지', '육상 레포츠','음식점', '문화시설', '산업관광지', '숙박시설', '수상 레포츠', '레포츠소개']",
+                "Number_of_Visit": "관광지 방문자 수"
+            },
+            "description": "This table contains information about tourist spots for local visitors."
+        },
+        "foreign_tourist_spots": {
+            "columns": {
+                "Tourist_Spot_Name_English": "관광지 영문 이름",
+                "Tourist_Spot_Name_Korean": "관광지 국문 이름",
+                "District": "관광지가 위치하는 지역(구) 이름",
+                "Major_Category": "관광지의 카테고리, Allowed values: ['역사관광지', '휴양관광지', '체험관광지', '쇼핑', '자연관광지', '건축/조형물', '육상 레포츠','산업관광지', '문화시설', '수상 레포츠', '음식점', '공연/행사', '숙박시설', '레포츠소개']",
+                "Number_of_Visit": "관광지 방문자 수"
+            },
+            "description": "This table contains information about tourist spots for foreign visitors."
+        },
+        "restaurants": {
+            "columns": {
+                "MENU_TYPE": "음식점의 메뉴 유형 (예: 한식, 중식, 식육 등)",
+                "RESTAURANT_NAME_KOREAN": "음식점의 한글 이름",
+                "ADDRESS_KOREAN": "음식점의 한글 주소",
+                "MENU_NAME": "음식점에서 제공하는 메뉴 이름 리스트",
+                "NATIONAL_PHONE_NUMBER": "음식점의 전화번호",
+                "DISTRICT_NAME": "음식점이 위치한 지역(구) 이름",
+                "LATITUDE": "음식점의 위도 좌표",
+                "LONGITUDE": "음식점의 경도 좌표",
+                "RESTAURANT_NAME_ENGLISH": "음식점의 영문 이름",
+                "ADDRESS_ENGLISH": "음식점의 영문 주소",
+                "OPENING_HOURS": "음식점의 영업 시간",
+                "RATING": "음식점의 평점 (5점 만점)",
+                "RATING_COUNT": "음식점의 평점을 준 리뷰 수",
+                "PRICE_LEVEL": "음식점의 가격대 수준",
+                "TAKEOUT_YN": "포장 가능 여부 (True/False)",
+                "RESERVABLE": "예약 가능 여부 (True/False)",
+                "BREAKFAST_YN": "아침 식사 제공 여부 (True/False)",
+                "LUNCH_YN": "점심 식사 제공 여부 (True/False)",
+                "DINNER_YN": "저녁 식사 제공 여부 (True/False)",
+                "BEER_YN": "맥주 제공 여부 (True/False)",
+                "OUTDOOR_SEAT_YN": "야외 좌석 제공 여부 (True/False)",
+                "MENU_FOR_CHILDREN_YN": "어린이 메뉴 제공 여부 (True/False)",
+                "RESTROOM_YN": "화장실 제공 여부 (True/False)",
+                "PARKING_LOT_YN": "주차장 제공 여부 (True/False)",
+                "PAYMENT_OPTIONS": "결제 옵션 (예: 카드 결제 가능)",
+                "REVIEW": "음식점에 대한 고객 리뷰"
+            },
+            "description": "This table contains information about popular restaurants in Busan"
+        }
+    }
+}
